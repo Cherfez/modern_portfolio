@@ -30,7 +30,7 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    background: rgba(lighten($primary-color, 2), 0.2);
   }
 }
 
@@ -118,7 +118,7 @@ main {
 //work/projects
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 0.7rem;
 
   img {
@@ -146,7 +146,7 @@ main {
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
-    @include easeOut
+    @include easeOut;
 
     &:hover {
       padding: 0.5rem 1.5rem;
@@ -176,12 +176,14 @@ main {
   @extend .btn;
   background: darken($primary-color, 50);
   color: #fff;
+  text-align: center;
 }
 
 .btn-light {
   @extend .btn;
   background: lighten($primary-color, 50);
   color: #333;
+  text-align: center;
 }
 
 #main-footer {
