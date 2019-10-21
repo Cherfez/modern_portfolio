@@ -292,3 +292,7 @@ main {
   .boxes div {
     font-size: 1.5rem;
     padding: 1.5rem; } }
+
+/* ctrl + ` = terminal
+
+npm run sass to watch scss*/
