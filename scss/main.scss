@@ -119,14 +119,13 @@ main {
 .projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0.7rem;
+  grid-gap: 1.5rem;
 
   img {
     width: 100%;
     border: 3px #fff solid;
 
     &:hover {
-      opacity: 0.5;
       border-color: $secondary-color;
       @include easeOut;
     }
@@ -166,10 +165,10 @@ main {
   border: 0;
   margin-bottom: 0.3rem;
 
-  &:hover {
+  /*&:hover {
     background: $secondary-color;
     color: set-text-color($secondary-color);
-  }
+  }*/
 }
 
 .btn-dark {
@@ -181,8 +180,8 @@ main {
 
 .btn-light {
   @extend .btn;
-  background: lighten($primary-color, 50);
-  color: #333;
+  background: $secondary-color;
+  color: #fff;
   text-align: center;
 }
 

@@ -1,3 +1,4 @@
+/*eece1a yellow*/
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -57,14 +58,14 @@
       height: 250px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: solid 3px #0f90a1; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #0f90a1; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -76,7 +77,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #0f90a1; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -140,7 +141,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #0f90a1; }
 
 main {
   padding: 4rem;
@@ -151,7 +152,7 @@ main {
       padding: 0.4rem;
       transition: all 0.5s ease-out; }
       main .icons a:hover {
-        color: #eece1a; }
+        color: #0f90a1; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -166,7 +167,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #eece1a 3px solid; }
+    border: #0f90a1 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -179,18 +180,17 @@ main {
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    border-bottom: #0f90a1 5px solid; }
 
 .projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0.7rem; }
+  grid-gap: 1.5rem; }
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
     .projects img:hover {
-      opacity: 0.5;
-      border-color: #eece1a;
+      border-color: #0f90a1;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -207,19 +207,20 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #eece1a;
-      color: #000; }
+      background: #0f90a1;
+      color: #fff; }
       .boxes div:hover span {
-        color: #000; }
+        color: #fff; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
-    color: #000; }
+  margin-bottom: 0.3rem;
+  /*&:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }*/ }
 
 .btn-dark {
   background: black;
@@ -227,8 +228,8 @@ main {
   text-align: center; }
 
 .btn-light {
-  background: #c4c4c4;
-  color: #333;
+  background: #0f90a1;
+  color: #fff;
   text-align: center; }
 
 #main-footer {
@@ -240,7 +241,7 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
