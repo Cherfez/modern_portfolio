@@ -29,6 +29,14 @@ $background-opacity: 0.7;
   }
 }
 
+@mixin clearfix { /*contact form*/
+  &:after {
+     content: "";
+     display: table;
+     clear: both;
+ }
+}
+
 //set text color
 @function set-text-color($color) {
   @if (lightness($color) > 40) {
