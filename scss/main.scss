@@ -203,22 +203,37 @@ main {
      width: 100%;
      height: 2.5rem;
      border: none;
-     border-bottom: 2px solid $secondary-color;
+     border-bottom: 3px solid $secondary-color;
      font-size: 1.2rem;
      line-height: 2rem;
      font-weight: 400;
+     background-color: lighten($primary-color, 5);
+     color: #fff;
+     letter-spacing: .1rem;
      
      &:focus {
         outline: none;
      }
-     
-     &:focus,
-     &.not-empty {
-        + .label {
-           transform: translateY(-24px);
-        }
-     }
   }
+
+  textarea.input-text {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 12rem;
+  }
+
+  input[data-state='invalid'] {
+  + .label {transform: translateY(24px);}
+  }
+  input[data-state='valid'] {
+  + .label {transform: translateY(-30px);}
+  }
+  textarea[data-state='invalid'] {
+    + .label {transform: translateY(24px);}
+    }
+  textarea[data-state='valid'] {
+    + .label {transform: translateY(-190px);}
+    }
+
   .label {
      position: absolute;
      left: 20px;
@@ -226,7 +241,7 @@ main {
      font-size: 1.2rem;
      line-height: 26px;
      font-weight: 400;
-     color: $secondary-color;
+     color: lighten($secondary-color, 5);
      cursor: text;
      transition: transform .2s ease-in-out;
   }
